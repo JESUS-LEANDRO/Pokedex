@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    text-align: center;
-    background:linear-gradient(to bottom, #161616, #8b8b8b)no-repeat;
+    background-image: url("../assets/images/pokemon_wallpaper01_1680.jpg");
+    background-repeat: repeat;
+    text-align: center;    
     min-height: 100vh;
 }
 main{
@@ -20,7 +21,7 @@ main{
 }
 .pokemon-img{
     position: absolute;
-    bottom: 55%;
+    bottom: 59%;
     left: 50%;
     transform: translate(-63%, 20%);
     height: 15%;
@@ -29,8 +30,40 @@ main{
     position: absolute;
     font-weight: 600;
     color: #4b4a4a;
-    bottom: 41%;
+    bottom: 40%;
     left: 30%;
+    font-size: clamp(8px, 5vw, 32px) ;
+}
+.dados-pokemon .pokename{
+    position: absolute;
+    font-weight: 600;
+    color: #0a0a0ad8;
+    bottom: 52%;
+    right: 70%;
+    font-size: clamp(8px, 5vw, 32px) ;
+}
+.dados-pokemon .pokemon-Att{
+    position: absolute;
+    font-weight: 600;
+    color: #0a0a0ad8;
+    bottom: 47%;
+    right: 72%;
+    font-size: clamp(8px, 5vw, 32px) ;
+}
+.dados-pokemon .pokeid{
+    position: absolute;
+    font-weight: 600;
+    color: #0a0a0ad8;
+    bottom: 52%;
+    left: 59%;
+    font-size: clamp(8px, 5vw, 32px) ;
+}
+.dados-pokemon .pokemon-Def{
+    position: absolute;
+    font-weight: 600;
+    color: #0a0a0ad8;
+    bottom: 47%;
+    left: 59%;
     font-size: clamp(8px, 5vw, 32px) ;
 }
 .pokemon-nome{
@@ -40,8 +73,30 @@ main{
 .form{
     position: absolute;
     width: 65%;
-    top: 65%;
+    top: 64%;
     left: 13.5%;
+}
+.descricao{
+    position: absolute;
+    display: inline-block;
+    top: 85%;
+    left: 130px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1em);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    padding: 10px;
+}
+.descricao a{
+    text-decoration: none;
+    color: white;
+}
+.descricao:active{
+    box-shadow: inset -4px 6px 0 #222;
+    font-size: 0.9rem;
 }
 .search{
     width: 100%;
@@ -56,7 +111,7 @@ main{
 }
 .buttons{
     position: absolute;
-    bottom: 10%;
+    top: 75%;
     left: 16%;
     width: 65%;
     display: flex;
@@ -77,4 +132,25 @@ main{
 .button:active{
     box-shadow: inset -4px 6px 0 #222;
     font-size: 0.9rem;
+}
+.voltar{
+    width: 80px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1em);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    float: left
+}
+.voltar:active{
+    box-shadow: inset -4px 6px 0 #222;
+    font-size: 0.9rem;
+}
+.voltar a{
+    text-decoration: none;
+    color: #fff;
 }

@@ -1,0 +1,72 @@
+body{
+    background-image: url("../assets/images/pokemon_wallpaper01_1680.jpg");
+}
+.voltar{
+    width: 80px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1em);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    float: left
+}
+.voltar:active{
+    box-shadow: inset -4px 6px 0 #222;
+    font-size: 0.9rem;
+}
+.voltar a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+input{
+    height: 20px;
+    width: 162px;
+    align-items: center;
+}
+.enviar{
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+}
+#comment-form{
+    border: 2px solid #363636;
+    text-align: center;
+    width: 172px;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.493);
+}
+textarea{
+    height: 70px;
+}
+#formulario{
+    align-items: center;
+    text-align: center;
+}
+.hide{
+    display: none;
+    margin-top: -150px;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+}
+div a,input[type="submit"]{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    opacity: 0.7;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+div a:hover, input[type="submit"]{
+    opacity: 1;
+}

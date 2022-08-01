@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comentários</title>
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/comentario.css">
+    <script src="js/comentario.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button class="voltar">
+        <a href="comentario.html">Voltar</a><br>
+      </button>
+    </header><br>
+    <p id="loading">Carregando...</p>
+    <div id="post" class="hide">
+      <div class="formulario">
+      <div id="post-container"></div>
+      <h2 class="formulario">Comentários:</h2>
+      <form id="comment-form">
+        <div class="formulario">
+          <label for="email">Seu e-mail:</label><br>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="formulario">
+          <label for="body">Comentário:</label><br>
+          <textarea
+            name="body"
+            id="body"
+            placeholder="Digite seu comentário"
+            required
+          ></textarea>
+        </div>
+        <input class="enviar" type="submit" value="Enviar"/>
+      </form>
+      <div id="comments-container"></div>
+    </div>
+  </body>
+</html>
